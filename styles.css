@@ -10,6 +10,8 @@ html {
 }
 
 main {
+  position: relative;
+
   width: 100vw;
   height: 100vh;
 
@@ -76,4 +78,58 @@ button:hover {
 
 button:active {
   background-color: #22c55e;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+  backdrop-filter: blur(5px);
+}
+
+.login-container form {
+  position: relative;
+  z-index: 10;
+  width: 37.5rem;
+  height: 50rem;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container form h1 {
+  letter-spacing: 1px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.login-container form input {
+  background-color: #e2e8f0;
+}
+
+.hidden {
+  display: none;
+}
+
+.close {
+  width: 0;
+  height: 0;
+  position: absolute;
+  background-color: #00000000;
+  color: rgba(31, 41, 55, 0.5);
+  font-weight: 500;
+  font-size: 2.4rem;
+  right: 3.5rem;
+  top: 0.8rem;
 }

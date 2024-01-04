@@ -68,6 +68,7 @@ button {
   font-weight: 500;
   color: #eee;
   text-transform: uppercase;
+  cursor: pointer;
 
   transition: 0.1s all;
 }
@@ -132,4 +133,11 @@ button:active {
   font-size: 2.4rem;
   right: 3.5rem;
   top: 0.8rem;
+}
+
+.close:hover {
+  color: rgba(31, 41, 55, 0.75);
+}
+.close:active {
+  color: rgba(31, 41, 55, 0.5);
 }

@@ -15,7 +15,7 @@
   <body>
     <main>
       <h1>Banking Online</h1>
-      <form action="#">
+      <form action="#" class="sign-up-form">
         <div class="input-container">
           <h3>Email</h3>
           <input type="email" class="email" />
@@ -28,27 +28,33 @@
           <h3>Confirm Password</h3>
           <input type="password" class="confirm-password" />
         </div>
-        <button>Create Account</button>
+        <button class="sign-up">Create Account</button>
+        <h3 class="error hidden"></h3>
       </form>
     </main>
 
     <div class="login-container hidden">
       <form action="#">
-        <h1>
-          Banking Online <br />
-          Login
-        </h1>
-        <div class="input-container">
-          <h3>Email</h3>
-          <input type="email" class="email" />
+        <h2 class="success hidden">You have no money!</h2>
+        <div class="form-container">
+          <h1>
+            Banking Online <br />
+            Login
+          </h1>
+          <div class="input-container">
+            <h3>Email</h3>
+            <input type="email" class="email" />
+          </div>
+          <div class="input-container">
+            <h3>Password</h3>
+            <input type="password" class="password" />
+          </div>
+          <button>Login</button>
         </div>
-        <div class="input-container">
-          <h3>Password</h3>
-          <input type="password" class="password" />
-        </div>
-        <button>Login</button>
         <button class="close">X</button>
       </form>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -120,7 +120,7 @@ button:active {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .close {
@@ -140,4 +140,13 @@ button:active {
 }
 .close:active {
   color: rgba(31, 41, 55, 0.5);
+}
+
+.error {
+  color: #dc2626;
+}
+
+.success {
+  color: #22c55e;
+  font-size: 3.2rem;
 }
